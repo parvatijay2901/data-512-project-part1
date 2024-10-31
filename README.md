@@ -15,6 +15,7 @@ This project follows to the best practices for open scientific research as menti
 ## Licenses
 ### Datasets used
 - **USGS Wildland Fire Combined Dataset**: This dataset serves as the primary source of data for the project and contains comprehensive wildfire data. The dataset was downloaded from this [link](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81) as part of the 'GeoJSON Files.zip' file. It is cited by Welty, J.L., and Jeffries, M.I. (2021). Combined wildland fire datasets for the United States and certain territories, 1800s-Present: U.S. Geological Survey data release. [doi](https://doi.org/10.5066/P9ZXGFY3). While the specific usage policy for this dataset is not explicitly stated, it is assumed to be safe to use.
+
 - **Air Quality Index Data**: Air Quality Data was needed to evaluate the performance of the smoke estimate created. This data was requested from the US Environmental Protection Agency (EPA) Air Quality Service (AQS) API. This is a historical API and does not provide real-time air quality data. The [documentation](https://aqs.epa.gov/aqsweb/documents/data_api.html) for the API provides definitions of the different call parameter and examples of the various calls that can be made to the API. The US EPA was created in the early 1970's. The EPA reports that they only started broad based monitoring with standardized quality assurance procedures in the 1980's. Many counties will have data starting somewhere between 1983 and 1988. However, some counties still do not have any air quality monitoring stations. The API helps resolve this by providing calls to search for monitoring stations and data using either station ids, or a county designation or a geographic bounding box. Some additional information on the Air Quality System can be found in the [EPA FAQ on the system](https://www.epa.gov/outdoor-air-quality-data/frequent-questions-about-airdata). The AQS API is publicly accessible and provides access to ambient air sample data collected by various pollution control agencies. Users are expected to be familiar with the terms of service that govern the use of the API. These [terms](https://aqs.epa.gov/aqsweb/documents/data_api.html#terms) outline acceptable usage practices and any restrictions on data access and storage
 
 ### Repository
@@ -27,11 +28,15 @@ A few snippets used in the script is developed by Dr. David W. McDonald for use 
 The code was executed on MacBook Pro. Before running this project, ensure that the required mentioned at the top of each of the scripts are installed. Additionally, please create the necessary folders and adjust the file paths as required for your environment.
 
 Due to space limitations, I could not have the data folder in the repository. Access the data from [here](https://drive.google.com/drive/folders/1yR7RkC28EGOouKa2W3QquWPzH_bZP3I_?usp=sharing).
-    - The intermediate data files can be accessed [here](https://drive.google.com/drive/folders/1ourdQkuUAiW_qeXRpL0K_y6oiG-ZwQgX?usp=share_link). 
-        - [wildfire_dataset_with_distance.csv](https://drive.google.com/drive/folders/1ourdQkuUAiW_qeXRpL0K_y6oiG-ZwQgX?usp=share_link): All the valid 118465 wildfire instances close to Vancouver, WA are mentioned here. 
-        - [wildfire_dataset_with_distance_cutoff.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing): All the 68394 filtered wildfire instances are mentioned here (according to the assignement specifications). 
-        - [wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing) and [wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing): Filtered Wildfire datasets across all the dates and grouped by year are available here.
-        - [aqi_data_grouped_by_date.csv)]([wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv]()) and [aqi_data_grouped_by_year.csv]([wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv]()): AQI data grouped by dates and years are available here.
+- The intermediate data files can be accessed [here](https://drive.google.com/drive/folders/1ourdQkuUAiW_qeXRpL0K_y6oiG-ZwQgX?usp=share_link). 
+
+    - [wildfire_dataset_with_distance.csv](https://drive.google.com/drive/folders/1ourdQkuUAiW_qeXRpL0K_y6oiG-ZwQgX?usp=share_link): All the valid 118465 wildfire instances close to Vancouver, WA are mentioned here. 
+
+    - [wildfire_dataset_with_distance_cutoff.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing): All the 68394 filtered wildfire instances are mentioned here (according to the assignement specifications). 
+
+    - [wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing) and [wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv](https://drive.google.com/file/d/1Mlcswoag46e3cPsug-51mddHWsc5nIOS/view?usp=sharing): Filtered Wildfire datasets across all the dates and grouped by year are available here.
+
+    - [aqi_data_grouped_by_date.csv)]([wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv]()) and [aqi_data_grouped_by_year.csv]([wildfire_dataset_with_distance_and_smoke_estimate_by_date.csv]()): AQI data grouped by dates and years are available here.
 
 To run this project, execute the notebooks in the folder [code](https://github.com/parvatijay2901/data-512-project-part1/tree/main/code).
 
