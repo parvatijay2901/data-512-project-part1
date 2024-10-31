@@ -73,7 +73,7 @@ Other inferences are documented in the scripts and in the [project report](https
 
 The project followed the best practices outlined in “The Practice of Reproducible Research” to ensure transparency and ease of replication:
 
-- The project maintained a hierarchical structure, separating scripts and data, into distinct folders (`scripts/` and `data/`) for better organization. 
+- The project maintained a hierarchical structure, separating scripts and data, into distinct folders (`code/` and [`data/`](https://drive.google.com/drive/folders/1yR7RkC28EGOouKa2W3QquWPzH_bZP3I_?usp=sharing)) for better organization. 
 - Dependencies were clearly listed on top of each scripts. This helps in easy replication of the environment.
 - The workflow was automated using Jupyter notebooks. This helps in seamless re-execution of the analysis.
 - I avoided hard coding paths. This made the project more simple and better adaptable for different environments.
